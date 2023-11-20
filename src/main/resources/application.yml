@@ -24,3 +24,7 @@ info:
   app:
     name: hello-actuator
     company: ebjt
+
+logging:
+  level:
+    com.hae.demo: debug
