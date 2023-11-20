@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Import;
 
 @SpringBootApplication
-@Import({ OrderConfigV0.class, StockConfigV1.class })
+@Import({ OrderConfigV0.class, StockConfigV2.class })
 public class DemoApplication {
 
     public static void main(String[] args) {
