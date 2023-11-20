@@ -17,8 +17,8 @@ import lombok.extern.slf4j.Slf4j;
 @RestController
 public class TrafficController {
     private List<String> list = new ArrayList<>();
-    @Autowired
-    private DataSource dataSource;
+    // @Autowired
+    // private DataSource dataSource;
 
     @GetMapping("/cpu")
     public String cpu() {
@@ -40,12 +40,12 @@ public class TrafficController {
         return "OK";
     }
 
-    @GetMapping("jdbc")
-    public String jdbc() throws SQLException {
-        log.info("jdbc");
-        Connection conn = dataSource.getConnection();
-        log.info("connection info={}", conn);
-        return "OK";
-    }
+    // @GetMapping("jdbc")
+    // public String jdbc() throws SQLException {
+    //     log.info("jdbc");
+    //     Connection conn = dataSource.getConnection();
+    //     log.info("connection info={}", conn);
+    //     return "OK";
+    // }
 
 }
